@@ -6,9 +6,6 @@ body {
   font-size: 14px;
   margin: 0;
   text-align: center;
-  background-image: url(../images/Background_Image.png);
-  background-position: center center;
-  background-size: 100% 100%;
 }
 
 section {
@@ -18,7 +15,7 @@ section {
 a {
   text-decoration: none;
 }
-/*Navigation*/
+/*Splash*/
 
 .nav-flex {
   display: flex;
@@ -32,7 +29,7 @@ a {
 .nav-list {
   list-style: none;
   padding: 0;
-  margin: 47px 0 0 320px;
+  margin: 47px 0 0 0;
 }
 
 .nav-item {
@@ -49,19 +46,19 @@ a {
 
 }
 
-/*splash*/
-
 .splash {
   background-image: url(../images/Background_Image.png);
   background-position: center center;
   background-size: 100% 100%;
+  padding-bottom: 96px;
+  margin-right: 0;
 }
 
 .splash-subtitle {
   font-family: 'Roboto Slab', serif;
   font-size: 40px;
   font-style: italic;
-  margin-top: 115px;
+  margin-top: 250px;
   color: #ffffff;
 }
 
@@ -70,8 +67,9 @@ a {
   font-size: 75px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 40px;
   color: #ffffff;
+  margin-bottom: 80px;
 }
 
 .splash-btn {
@@ -131,6 +129,16 @@ a {
 
 }
 
+.services-icon-top{
+    display: inline-block;
+    width: 67px;
+    height: 67px;
+    line-height: 83px;
+    border: 3px solid #fed136;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+
 .service-descr{
   font-weight: 400;
   line-height: 1.7;
@@ -145,19 +153,21 @@ a {
 }
 
 .card {
-  width: 291px;
-  height: 393px;
+  max-width: 320px;
+  height: 390px;
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
   margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
 .card-image {
-  max-width: 291px;
-  height: 300px;
+  max-width: 100%;
+
 }
 
 .card-image img {
@@ -168,8 +178,6 @@ a {
 
 .card-body {
   background: #ffffff;
-  width: 291px;
-  height: 93px;
 }
 
 .card-body h4{
